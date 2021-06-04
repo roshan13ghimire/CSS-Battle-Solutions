@@ -1,0 +1,29 @@
+<div></div>
+<style>
+    body {
+        background: #6592CF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        width: 300px;
+        height: 150px;
+        position: relative;
+        background: #243D83;
+    }
+
+    div::after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: #EEB850;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 50px #243D83, 0 0 0 100px #6592CF;
+    }
+</style>
