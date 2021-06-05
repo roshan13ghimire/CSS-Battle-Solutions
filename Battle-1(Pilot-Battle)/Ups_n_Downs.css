@@ -1,0 +1,28 @@
+<div class="down"></div>
+<div class="top"></div>
+<div class="down"></div>
+<style>
+    body {
+        background-color: #62306D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .down {
+        height: 100px;
+        width: 100px;
+        background-color: #F7EC7D;
+        border-radius: 0 0 50% 50%;
+        margin-top: 100px;
+    }
+
+    .top {
+        margin-top: -100px;
+        height: 100px;
+        width: 100px;
+        background-color: #F7EC7D;
+        border-radius: 0 0 50% 50%;
+        transform: rotate(180deg);
+    }
+</style>
