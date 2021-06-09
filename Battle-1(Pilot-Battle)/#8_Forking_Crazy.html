@@ -1,0 +1,54 @@
+<div class=main>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+</div>
+<div class="circle"></div>
+<div class="line"></div>
+<style>
+    body {
+        background-color: #6592CF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main {
+        margin-top: 42px;
+        display: flex;
+    }
+
+    .one {
+        height: 100px;
+        width: 20px;
+        background-color: #060F55;
+        border-radius: 50px;
+    }
+
+    .two {
+        height: 110px;
+        width: 20px;
+        background-color: #6592CF;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .circle {
+        height: 120px;
+        width: 140px;
+        border-radius: 0px 0px 80px 80px;
+        background-color: #060F55;
+        margin-top: -30px;
+    }
+
+    .line {
+        height: 100px;
+        width: 20px;
+        background-color: #060F55;
+        margin-top: -5px;
+    }
