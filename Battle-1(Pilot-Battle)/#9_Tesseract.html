@@ -1,0 +1,104 @@
+<div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+<div class="square"></div>
+<div class="right">
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        background-color: #222730;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .square {
+        height: 150px;
+        width: 150px;
+        background-color: #4CAAB3;
+        transform: rotate(45deg);
+        position: relative;
+    }
+
+    .square::after {
+        content: ' ';
+        position: absolute;
+        top: 50;
+        right: 50;
+        height: 50px;
+        width: 50px;
+        background-color: #393E46;
+        border-radius: 50px;
+    }
+
+    .top {
+        border-top: 99px solid #4CAAB3;
+        border-right: 99px solid transparent;
+    }
+
+    .bottom {
+        margin-top: -48px;
+        border-bottom: 99px solid #4CAAB3;
+        border-right: 99px solid transparent;
+    }
+
+    .right {
+        transform: rotate(180deg);
+    }
+</style>
+<div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+<div class="square"></div>
+<div class="right">
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        background-color: #222730;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .square {
+        height: 150px;
+        width: 150px;
+        background-color: #4CAAB3;
+        transform: rotate(45deg);
+        position: relative;
+    }
+
+    .square::after {
+        content: ' ';
+        position: absolute;
+        top: 50;
+        right: 50;
+        height: 50px;
+        width: 50px;
+        background-color: #393E46;
+        border-radius: 50px;
+    }
+
+    .top {
+        border-top: 99px solid #4CAAB3;
+        border-right: 99px solid transparent;
+    }
+
+    .bottom {
+        margin-top: -48px;
+        border-bottom: 99px solid #4CAAB3;
+        border-right: 99px solid transparent;
+    }
+
+    .right {
+        transform: rotate(180deg);
+    }
+</style>
