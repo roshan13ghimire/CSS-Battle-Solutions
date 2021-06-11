@@ -1,0 +1,46 @@
+<div class="small"></div>
+<div class="large"></div>
+<div class="small"></div>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: #62306D;
+    }
+
+    div {
+        height: 120px;
+        width: 100px;
+        background-color: #F7EC7D;
+        position: relative;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .large {
+        height: 220px;
+    }
+
+    .small::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: 20px solid #AA445F;
+        background-color: #E38F66;
+        position: absolute;
+        top: -30;
+    }
+
+    .large::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: 20px solid #E38F66;
+        background-color: #AA445F;
+        position: absolute;
+        top: -30;
+    }
+</style>
