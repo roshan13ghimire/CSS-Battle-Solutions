@@ -1,0 +1,51 @@
+<div class="one three"></div>
+<div class="two"></div>
+<div class="one"></div>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #191210;
+    }
+
+    .one {
+        height: 30px;
+        width: 60px;
+        background-color: #191210;
+        border: 20px solid #ECA03D;
+        border-radius: 60px 60px 0px 0px;
+        border-bottom: 0;
+        margin-left: -20px;
+        margin-top: -50px;
+    }
+
+    .three {
+        transform: rotate(180deg);
+        position: relative;
+        left: 20px;
+        margin-top: 50px
+    }
+
+    .two {
+        height: 100px;
+        width: 100px;
+        background-color: #191210;
+        border-radius: 100%;
+        border: 20px solid #ECA03D;
+        position: relative;
+        z-index: 1;
+    }
+
+    .two::after {
+        content: "";
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #84271C;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
