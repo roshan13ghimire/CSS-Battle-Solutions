@@ -1,0 +1,58 @@
+<div class="one left">
+    <div class="round rleft"></div>
+</div>
+<div class="two one"></div>
+<div class="one">
+    <div class="round rright"></div>
+</div>
+<style>
+    body {
+        margin: 0;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5D6B4;
+        transform: rotate(180deg);
+    }
+
+    .one {
+        height: 30px;
+        width: 60px;
+        border: 20px solid #D86F45;
+        border-radius: 60px 60px 0px 0px;
+        border-bottom: 0;
+        margin-top: -50px;
+        position: relative;
+    }
+
+    .two {
+        transform: rotate(180deg);
+        position: relative;
+        left: 20px;
+        margin-top: 50px;
+    }
+
+    .left {
+        position: relative;
+        left: 40px;
+    }
+
+    .round {
+        height: 20px;
+        width: 20px;
+        background-color: #D86F45;
+        border-radius: 50px;
+        position: absolute;
+    }
+
+    .rleft {
+        top: 20px;
+        left: -20px;
+    }
+
+    .rright {
+        top: 20px;
+        left: 60px;
+    }
+</style>
