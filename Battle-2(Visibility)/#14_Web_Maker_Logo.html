@@ -1,0 +1,50 @@
+<div class="yellow"></div>
+<div class="orange"></div>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2B6;
+    }
+
+    div {
+        border-left: 75px solid transparent;
+        position: relative;
+    }
+
+    .yellow {
+        border-top: 130px solid #FD4602;
+        border-right: 75px solid transparent;
+        left: 20px;
+    }
+
+    .yellow::after {
+        content: "";
+        border-right: 75px solid transparent;
+        border-left: 75px solid transparent;
+        position: absolute;
+        right: -55px;
+        top: -130px;
+        border-top: 130px solid #FF6D00;
+    }
+
+    .orange {
+        border-top: 130px solid #FF6D00;
+        transform: rotate(180deg);
+        border-right: 85px solid transparent;
+        margin-left: -30px;
+    }
+
+    .orange::after {
+        content: "";
+        border-right: 75px solid transparent;
+        border-left: 75px solid transparent;
+        position: absolute;
+        right: -95px;
+        top: -130px;
+        border-top: 130px solid #FD4602;
+    }
+    }
+</style>
