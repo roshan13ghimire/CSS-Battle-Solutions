@@ -1,0 +1,41 @@
+<div class="circle">
+    <div class="mid"></div>
+</div>
+<div class="circle1"></div>
+<style>
+    body {
+        margin: 0;
+        background-color: #09042A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        height: 150px;
+        width: 150px;
+    }
+
+    .circle {
+        border-radius: 150px;
+        background-color: #7B3F61;
+        position: relative;
+    }
+
+    .circle1 {
+        border-radius: 150px;
+        background-color: #E78481;
+        margin-left: -50px;
+    }
+
+    .mid {
+        height: 80px;
+        width: 82px;
+        border-radius: 0px 82px;
+        background-color: #09042A;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 35px;
+        left: 84px;
+    }
+</style>
